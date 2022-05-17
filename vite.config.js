@@ -27,18 +27,25 @@ export default defineConfig(({ command, mode }) => ({
     manifest: true,
     // target: 'es2018',
     outDir: 'public/build',
+    emptyOutDir: true,
     rollupOptions: {
       input: 'resources/assets/js/main.jsx',
     },
   },
-  // server: {
-  //   host: '0.0.0.0',
-  //   strictPort: true,
-  //   port: 3000
-  // },
   resolve: {
     alias: {
       '@': resolve(__dirname, './resources'),
-    }
+    },
+    extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json'],
+    preserveSymlinks: false
   },
+  // server: {
+  //   host: '0.0.0.0',
+  //   strictPort: true,
+  //   port: 3000,
+  //   https: false
+  // },
+  // esbuild: {
+  //   jsxInject: `import React from 'react'`
+  // }
 }))
