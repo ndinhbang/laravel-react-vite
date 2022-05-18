@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import logo from '../img/logo.svg'
+import logo from '@/img/logo.svg'
 import '../css/App.css'
 import { Button } from '@mantine/core';
 

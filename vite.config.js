@@ -37,7 +37,7 @@ export default defineConfig(({ command, mode }) => ({
   },
   resolve: {
     alias: {
-      '@': resolve(__dirname, './resources'),
+      '@': resolve(__dirname, './resources/assets'),
     },
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json'],
     preserveSymlinks: false
