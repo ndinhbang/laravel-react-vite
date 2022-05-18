@@ -52,6 +52,12 @@ export default defineConfig(({ command, mode }) => ({
     //   cert: readFileSync('C:\\laragon\\etc\\ssl\\laragon.crt'),
     // },
   },
+  // preview: {
+  //   https: {
+  //     key: readFileSync('C:\\laragon\\etc\\ssl\\laragon.key'),
+  //     cert: readFileSync('C:\\laragon\\etc\\ssl\\laragon.crt'),
+  //   },
+  // }
   // esbuild: {
   //   jsxInject: `import React from 'react'`
   // }
