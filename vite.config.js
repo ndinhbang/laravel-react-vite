@@ -39,12 +39,13 @@ export default defineConfig(({ command, mode }) => ({
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json'],
     preserveSymlinks: false
   },
-  // server: {
-  //   host: '0.0.0.0',
-  //   strictPort: true,
-  //   port: 3000,
-  //   https: false
-  // },
+  server: {
+    origin: 'http://localhost:3000', // https://vitejs.dev/config/#server-origin
+    // host: '0.0.0.0',
+    // strictPort: true,
+    // port: 3000,
+    // https: false
+  },
   // esbuild: {
   //   jsxInject: `import React from 'react'`
   // }
