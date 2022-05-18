@@ -1,10 +1,11 @@
 import {resolve} from 'path'
+// import {readFileSync} from 'fs'
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import { VitePWA } from 'vite-plugin-pwa'
+import react from '@vitejs/plugin-react';
+// import { VitePWA } from 'vite-plugin-pwa'
 import { splitVendorChunkPlugin } from 'vite'
 
-import manifest from './public/manifest.json';
+// import manifest from './public/manifest.json'
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command, mode }) => ({
@@ -46,7 +47,10 @@ export default defineConfig(({ command, mode }) => ({
     // host: '0.0.0.0',
     // strictPort: true,
     // port: 3000,
-    // https: false
+    // https: {
+    //   key: readFileSync('C:\\laragon\\etc\\ssl\\laragon.key'),
+    //   cert: readFileSync('C:\\laragon\\etc\\ssl\\laragon.crt'),
+    // },
   },
   // esbuild: {
   //   jsxInject: `import React from 'react'`
