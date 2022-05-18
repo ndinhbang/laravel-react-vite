@@ -1,13 +1,15 @@
+import {resolve} from 'path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
-import {resolve} from 'path';
+import { splitVendorChunkPlugin } from 'vite'
 
 import manifest from './public/manifest.json';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command, mode }) => ({
   plugins: [
+    splitVendorChunkPlugin(),
     react(),
     // VitePWA({
     //   manifest,
